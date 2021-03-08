@@ -16,7 +16,7 @@
                     <!--main-navigation-->
     <header class="site-item" >
 
-        <div class="container" >
+        <div class="header-container" >
 
             <nav class="header-nav">
                 <a class="logo" href="index.html">
@@ -25,14 +25,14 @@
                 </a>
             
                 <ul class="site-navigation">
-                    <li class="navigation-menu">
-                        <a class="link current" href="">Студия</a>
+                    <li class="navigation-item">
+                        <a class="nav-link current" href="">Студия</a>
                     </li>
-                    <li class="navigation-menu">
-                        <a class="link" href="./portpholio.html">Портфолио</a>
+                    <li class="navigation-item">
+                        <a class="nav-link" href="./portpholio.html">Портфолио</a>
                     </li>
-                    <li class="navigation-menu">
-                        <a class="link" href="">Контакты</a>
+                    <li class="navigation-item">
+                        <a class="nav-link" href="">Контакты</a>
                     </li>
             
                 </ul>
@@ -40,36 +40,35 @@
             </nav>
             <ul class="header-contacts">
                 <li class="contacts-phone">
-                    <a class="site-contacts" href="info@devstudio.com">
-                        <svg class="icon-contact" width="16px" height="12px">
+                    <a class="contacts-link" href="info@devstudio.com">
+                        <svg class="contacts-icon" width="16px" height="12px">
                             <use href="./img/symbol-defs.svg#icon-mail-1"></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
                 <li class="contacts-phone">
-                    <a class="site-contacts" href="+38-096-111-11-11">
-                        <svg class="icon-contact" width="10px" height="16px">
+                    <a class="contacts-link" href="+38-096-111-11-11">
+                        <svg class="contacts-icon" width="10px" height="16px">
                          <use href="./img/symbol-defs.svg#icon-phone-1"></use>
                     </svg>
                     +38 096 111 11 11
                     </a>
                 </li>
             </ul>
-        </div>   
-      
+        </div>       
 
     </header>
              <!--main-content-->
         <main>
                         <!--by-our-product-->
            
-                <section class="product-section">
+                <section class="hero-section">
                                     
 
-                            <h1 class="product-item">Эффективные решения <br>для вашего бизнеса</h1>
+                            <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
                            
-                            <button class="product-link" data-modal-open> Заказать услугу </button>
+                            <button class="hero-link" data-modal-open> Заказать услугу </button>
                         
                 
                 </section>
@@ -78,13 +77,15 @@
         
                         <!--stydio-skills-->
 
-            <section class="skills-item">
+            <section class="skills-section">
 
                 <div class="skills-container">
 
                     <h2 class="visually-hidden">Наши скилы </h2>
-                    <ul class="skills-position">
-                        <li class="skills-colon">
+
+                    <ul class="skills-list">
+
+                        <li class="skills-card">
                             <div class="icon-box">
                                 <svg class="skil-icon" width="65px" height="70px">
                                   <use href="./img/symbol-defs.svg#icon-details-1"></use>
@@ -93,7 +94,8 @@
                             <h3 class="skills-title">Внимание к деталям</h3>
                             <p class="skills-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                         </li>
-                        <li class="skills-colon">
+
+                        <li class="skills-card">
 
                            <div class="icon-box">
                                 <svg class="skil-icon" width="67px" height="70px">
@@ -105,7 +107,8 @@
                             <p class="skills-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 
                         </li>
-                        <li class="skills-colon">
+
+                        <li class="skills-card">
 
                            <div class="icon-box">
                                 <svg class="skil-icon" width="70px" height="54px">
@@ -117,7 +120,7 @@
                             <p class="skills-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                         </li>
 
-                        <li class="skills-colon">
+                        <li class="skills-card">
 
                              <div class="icon-box">
                                  <svg class="skil-icon" width="70px" height="70px">
@@ -142,9 +145,9 @@
 
                     <h2 class="work-title">Чем мы занимаемся</h2>
                    
-                    <ul class="work-image">
+                    <ul class="work-list">
                     
-                        <li class="work-foto">
+                        <li class="work-card">
                             
                            <a href="" class="work-link">
 
@@ -154,13 +157,13 @@
                               
                             </div>
 
-                            <p class="work-foto-techt">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+                            <p class="work-item">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
 
                            </a>
 
                         </li>
 
-                        <li  class="work-foto">
+                        <li  class="work-card">
                            
                            <a href="" class="work-link">
 
@@ -170,13 +173,13 @@
                                
                             </div>
 
-                            <p class="work-foto-techt">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
+                            <p class="work-item">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
 
                            </a>
 
                         </li>
 
-                        <li  class="work-foto">
+                        <li  class="work-card">
                     
                            <a href="" class="work-link">
 
@@ -186,7 +189,7 @@
                                 
                             </div>
 
-                            <p class="work-foto-techt">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
+                            <p class="work-item">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
 
                            </a>
 
@@ -647,6 +650,32 @@
                     </ul>
                  </div>
 
+                 <!-- foter-contain3 -->
+                 
+                 <div class="container-form">
+
+                    <h2 class="form-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+
+                  <form class="fotter-form">                
+
+                   <label>
+
+                    <input type="text" name="e-mail" placeholder="E-mail" class="form-input">
+
+                   </label>
+
+                   <button type="submit" class="footer-butn">
+                       Подписаться
+                       <svg width="24px" height="24px" class="form-icon-send">
+                           <use href="./img/symbol-defs.svg#icon-send"></use>
+                       </svg>
+                    </button>
+
+
+                  </form>
+
+                 </div>
+
         </div>
 
 
@@ -655,6 +684,85 @@
     <div class="backdrop is-hidden" data-modal>
 
         <div class="modal">
+
+            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+            <form action="" class="modal-form">
+
+                <div class="form-container">
+
+                    <div class="form-item">
+
+                        <label for="name">Имя</label>  
+
+                       <div class="form-position">
+                            <input type="text" name="name" id="name" class="form-field">
+                            <svg width="12px" height="12px" class="form-icon">
+                                <use href="./img/symbol-defs.svg#icon-name"></use>
+                            </svg>
+
+                       </div>
+
+                    </div>
+
+                    <div class="form-item">
+
+                        <label for="tel" >Телефон</label>
+
+                        <div class="form-position">
+
+                            <input type="tel" name="tel" id="tel" class="form-field">
+                            <svg width="13px" height="13px" class="form-icon">
+                                <use href="./img/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-item">
+
+                        <label for="e-mail" >Почта</label>
+
+                        <div class="form-position">
+
+                            <input type="email" name="e-mail" id="e-mail" class="form-field">
+                            <svg width="15px" height="12px" class="form-icon">
+                                <use href="./img/symbol-defs.svg#icon-emaill"></use>
+                            </svg>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-item">
+                        <label for="coment" >Коментарий</label>                        
+                        <textarea name="coment" id="coment" rows="6" placeholder="Введите текст" class="form-textarea"></textarea>
+                        
+                    </div>                  
+                   
+                        <div class="modal-agree-contain">
+                           <div class="agree-position">
+                                    <label class="form-accept">
+                                        <input type="checkbox" name="checkbox" class="checkbox">
+                                        <svg class="agree-icon" width="16" height="15">
+                                            <use href="./img/symbol-defs.svg#icon-agree" class="icon-agree"></use>
+                                        </svg>
+                                    
+                                        Соглашаюсь с рассылкой и принимаю
+                                        <a href="" class="modal-agrement">Условия договора</a>
+                                    </label>
+
+                           </div>
+                       
+                            <button class="modal-send" type="submit">Оправить</button>
+                        </div>
+                                         
+                  </div>
+                    
+            
+               
+            </form>
 
             <button class="modal-but">
 
